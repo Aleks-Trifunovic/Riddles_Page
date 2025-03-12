@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #2196f3;
+  overflow: hidden;
+}
+
+.bubbleContainer {
+  position: relative; /* Allow absolute positioning of child elements */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Hide any bubbles that overflow */
+}
+
+.bubble {
+  width: 120px;
+  height: 120px;
+  border-radius: 69% 64% 67% 74%;
+  background: linear-gradient(45deg, #fdf8f89a, #fdf8f82e);
+  border: 1px solid #ffffff47;
+  position: absolute;
+  animation: rotate_bubbles 5s linear infinite;
+  animation: appear 10s forwards linear infinite;
+}
+
+@keyframes rotate_bubbles {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(0); /* Start at assigned bottom position */
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-150vh); /* Move way beyond the top */
+    opacity: 0;
+  }
+}

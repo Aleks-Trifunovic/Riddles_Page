@@ -6,10 +6,10 @@ body {
 }
 
 .bubbleContainer {
-  position: relative; /* Allow absolute positioning of child elements */
+  position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden; /* Hide any bubbles that overflow */
+  overflow: hidden;
 }
 
 .bubble {

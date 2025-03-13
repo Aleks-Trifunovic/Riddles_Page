@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: #2196f3;
+  background: rgb(1, 27, 48);
   overflow: hidden;
 }
 
@@ -19,8 +19,14 @@ body {
   background: linear-gradient(45deg, #fdf8f89a, #fdf8f82e);
   border: 1px solid #ffffff47;
   position: absolute;
-  animation: rotate_bubbles 5s linear infinite;
-  animation: appear 10s forwards linear infinite;
+  animation: rotate_bubbles 5s linear infinite,
+    appear 10s forwards linear infinite;
+}
+
+.bubble:active {
+  /* do sth on hover or when active
+  like it reveals a text that needs to be inputed to proceed
+  what text? */
 }
 
 @keyframes rotate_bubbles {
